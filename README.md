@@ -35,9 +35,13 @@ contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additio
 
 ## Azure Machine Learning
 
-### Deploying Machine Learning in Azure
+### Deploying Machine Learning in Azure 
+
+- **Deploying Machine Learning** - deploy ML models in Azure ([Notebook](notebooks/DeployingML.ipynb))
 
 ### Machine Learning Pipelines
+
+- **ML Automation** - automating ML in Azure ([Notebook](notebooks/MLAutomation.ipynb))
 
 ## Machine Learning in Industries
 
