@@ -1,4 +1,4 @@
-# Project
+# Azure Vision AI Resources
 
 > FTA team: this resource contains examples, content, best practices and guidance
 > for AI/ML
@@ -16,6 +16,38 @@ provided by the bot. You will only need to do this once across all repos using o
 This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/).
 For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or
 contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
+
+## General Vision Tasks in Azure
+
+### Getting Started and Computer Vision
+
+### Classification
+
+### Detection
+
+### Segmentation
+
+## Human Analytics with Azure Vision AI
+
+### Introducing Pose Estimation
+
+### Video Action Recognition
+
+## Azure Machine Learning
+
+### Deploying Machine Learning in Azure
+
+### Machine Learning Pipelines
+
+## Machine Learning in Industries
+
+### Computer Vision 
+### Health and Fitness
+### Security
+### Automotive
+### Manufacturing
+
+
 
 ## Trademarks
 
