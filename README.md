@@ -17,22 +17,20 @@ This project has adopted the [Microsoft Open Source Code of Conduct](https://ope
 For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or
 contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
 
-## General Vision Tasks in Azure
+## Getting Started 
 
-### Getting Started and Computer Vision
-
-### Classification
+## Classification
 
 - [Image Classification](https://github.com/microsoft/computervision-recipes/tree/master/scenarios/classification) 
 
-### Detection
+## Detection
 
 Object detection is a technique that allows you to detect the an object within an image (usually by specifying a bounding box).
 
 - [Detect objects in images](https://docs.microsoft.com/en-us/azure/cognitive-services/computer-vision/concept-object-detection)
 - [Brand detection](https://docs.microsoft.com/en-us/azure/cognitive-services/computer-vision/concept-brand-detection)
 
-### Segmentation
+## Segmentation
 
 - **Segmentation** - image classification is a machine learning technique to learn and predict the category of a given image. [Segmentation](https://github.com/microsoft/computervision-recipes/tree/master/scenarios/segmentation)
 
@@ -40,28 +38,23 @@ Object detection is a technique that allows you to detect the an object within a
 
 - **Human body keypoints** - [Notebook](https://github.com/kevinash/ai-in-sports/blob/master/4.5_HumanBodyKeypoints.ipynb)
 
-### Introducing Pose Estimation
+## 3D Pose Estimation
 
-### Video Action Recognition
+## Video Action Recognition
 
 ## Azure Machine Learning
 
-### Deploying Machine Learning in Azure 
+## Cognitive Services
+
+## Deploying Machine Learning in Azure 
 
 - **Deploying Machine Learning** - deploy ML models in Azure ([Notebook](notebooks/DeployingML.ipynb))
 - [Deploying to Azure Kubernetes Service (AKS)](https://github.com/microsoft/computervision-recipes/blob/master/scenarios/classification/22_deployment_on_azure_kubernetes_service.ipynb)
 
-### Machine Learning Pipelines
+## Machine Learning Pipelines
 
 - **ML Automation** - automating ML in Azure ([Notebook](notebooks/MLAutomation.ipynb))
 
-## Machine Learning in Industries
-
-### Computer Vision 
-### Health and Fitness
-### Security
-### Automotive
-### Manufacturing
 
 
 ## Trademarks
