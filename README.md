@@ -77,15 +77,11 @@ Action recognition typically involves analyzing actions over time. Kinetics is a
 
 Task | Definition
 ------------ | -------------
-Registering Models | To make a model available for your client, the model needs to be deployed, so you can give your clients something like a link to an API, and then they can use it in their own apps.
-Model Management | 
-Defining a Compute Environment | 
-Creating a scoring script | 
-Runtime Environment | 
-Training a model |
-Calling a model endpoint | 
+Model Management | To make a model available for your client, the model needs to be deployed, so you can give your clients something like a link to an API, and then they can use it in their own apps.
+Defining Compute Environments | 
+Training models |
 Continuous model delivery | 
-
+Using Models in your apps |
 
 
 ### Managing Models
