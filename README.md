@@ -45,6 +45,7 @@ contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additio
 ### Deploying Machine Learning in Azure 
 
 - **Deploying Machine Learning** - deploy ML models in Azure ([Notebook](notebooks/DeployingML.ipynb))
+- [Deploying to Azure Kubernetes Service (AKS)](https://github.com/microsoft/computervision-recipes/blob/master/scenarios/classification/22_deployment_on_azure_kubernetes_service.ipynb)
 
 ### Machine Learning Pipelines
 
@@ -57,7 +58,6 @@ contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additio
 ### Security
 ### Automotive
 ### Manufacturing
-
 
 
 ## Trademarks
