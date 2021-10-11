@@ -35,12 +35,12 @@ There’re several areas, or paradigms in machine learning that define most of t
 
 Task | Definition
 ------------ | -------------
-Classification | Classification of objects is essential for a machine learning model to understand various classes of objects present in the video or image: for example, classifying a human, or a tennis ball is the first practical step towards analyzing the image. Most image classification models are trained on ImageNet and use CNNs.
-Detection | Detection of objects from images or videos is a fundamental task in deep vision: typically, it involves finding a bounding box for an object. Detection is usually done with R-CNN (Region based CNN).
+Classification | Classification of objects is essential for a machine learning model to understand various classes of objects present in the video or image: for example, classifying a human, or a tennis ball is the first practical step towards analyzing the image. Examples of image classification models include ImageNet and CNNs.
+Detection | Detection of objects from images or videos is a fundamental task in deep vision: typically, it involves finding a bounding box for an object. Examples of detection models include R-CNN (Region based CNN).
 Segmentation | Segmentation is the next step from classification and detection, dividing the image to segments on the pixel level. Because objects are often occluded in images, with parts of one blocking another, instance segmentation helps identifying entire objects regardless of occlusion. Some examples of networks that semantic segmentation models use are Mask R-CNN.
-Tracking | 
-Keypoints |
-Action Recognition
+Tracking | Object Tracking is another task in deep vision that deals with video and objects displacement over time.  
+Keypoints | Keypoints detection, in particular human keypoints detection, is the task of estimating human body pose, typically based on the model that consists of human body parts and joints.
+Action Recognition | Action recognition typically involves analyzing actions over time. Kinetics is an example of a dataset targeting action recognition.
 
 
 ## Classification Tasks
@@ -70,6 +70,8 @@ Object Tracking is another task in deep vision that deals with video and objects
 Keypoints detection, in particular human keypoints detection, is the task of estimating human body pose, typically based on the model that consists of human body parts and joints. ( [Human Keypoints Detection](https://github.com/kevinash/ai-in-sports/blob/master/4.5_HumanBodyKeypoints.ipynb) )
 
 ## Action Recognition
+
+Action recognition typically involves analyzing actions over time. Kinetics is an example of a dataset targeting action recognition.
 
 ## Managing Models in Azure
 
