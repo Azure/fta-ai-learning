@@ -32,6 +32,8 @@ contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additio
 
 ### Segmentation
 
+- [Segmentation](https://github.com/microsoft/computervision-recipes/tree/master/scenarios/segmentation)
+
 ## Human Analytics with Azure Vision AI
 
 ### Introducing Pose Estimation
