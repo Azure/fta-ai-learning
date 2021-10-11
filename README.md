@@ -43,33 +43,33 @@ Keypoints | Keypoints detection, in particular human keypoints detection, is the
 Action Recognition | Action recognition typically involves analyzing actions over time. Kinetics is an example of a dataset targeting action recognition.
 
 
-## Classification Tasks
+### Classification 
 
 Classification of objects is essential for a machine learning model to understand various classes of objects present in the video or image: for example, classifying a human, or a tennis ball is the first practical step towards analyzing the image. Most image classification models are trained on ImageNet and use CNNs.
 
 - Classification tasks ([Azure Workspace for Classification](https://github.com/microsoft/computervision-recipes/blob/master/scenarios/classification/20_azure_workspace_setup.ipynb) | [Deployment to Azure Kubernetes Services](https://github.com/microsoft/computervision-recipes/blob/master/scenarios/classification/22_deployment_on_azure_kubernetes_service.ipynb))
 
-## Detection Tasks
+### Detection 
 
 Detection of objects from images or videos is a fundamental task in deep vision: typically, it involves finding a bounding box for an object. Detection is usually done with R-CNN (Region based CNN).
 
 - Detection tasks ( [Training](https://github.com/microsoft/computervision-recipes/blob/master/scenarios/detection/01_training_introduction.ipynb) | [Deployment](https://github.com/microsoft/computervision-recipes/blob/master/scenarios/detection/20_deployment_on_kubernetes.ipynb) | [Detecting objects in images](https://docs.microsoft.com/en-us/azure/cognitive-services/computer-vision/concept-object-detection) | [Brand detection](https://docs.microsoft.com/en-us/azure/cognitive-services/computer-vision/concept-brand-detection))
 
-## Segmentation Tasks
+### Segmentation 
 
 Segmentation is the next step from classification and detection, dividing the image to segments on the pixel level. Because objects are often occluded in images, with parts of one blocking another, instance segmentation helps identifying entire objects regardless of occlusion. Some examples of networks that semantic segmentation models use are Mask R-CNN.
 
 - Segmentation tasks ( [Training](https://github.com/microsoft/computervision-recipes/blob/master/scenarios/segmentation/01_training_introduction.ipynb) ) 
 
-## Object Tracking
+### Object Tracking
 
 Object Tracking is another task in deep vision that deals with video and objects displacement over time. 
 
-## Keypoints
+### Keypoints
 
 Keypoints detection, in particular human keypoints detection, is the task of estimating human body pose, typically based on the model that consists of human body parts and joints. ( [Human Keypoints Detection](https://github.com/kevinash/ai-in-sports/blob/master/4.5_HumanBodyKeypoints.ipynb) )
 
-## Action Recognition
+### Action Recognition
 
 Action recognition typically involves analyzing actions over time. Kinetics is an example of a dataset targeting action recognition.
 
