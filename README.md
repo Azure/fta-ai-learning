@@ -105,9 +105,8 @@ Model.get_model_path('TestModel', _workspace=workspace)
 
 The location of your registered model in the workspace will become important in the next steps, because you’ll need to reference this model in your scoring script’s initialization, when this model is loaded by your service.
 
-
-- **Deploying Machine Learning** - deploy ML models in Azure ([Notebook](notebooks/DeployingML.ipynb))
-- [Deploying to Azure Kubernetes Service (AKS)](https://github.com/microsoft/computervision-recipes/blob/master/scenarios/classification/22_deployment_on_azure_kubernetes_service.ipynb)
+- More on deploying ML models in Azure ( [Notebook](notebooks/DeployingML.ipynb) | [Deploying to Azure Kubernetes Service](https://github.com/microsoft/computervision-recipes/blob/master/scenarios/classification/22_deployment_on_azure_kubernetes_service.ipynb) )
+ 
 
 ## Machine Learning Pipelines
 
