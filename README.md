@@ -27,18 +27,26 @@ There’re several areas, or paradigms in machine learning that define most of t
 
 ## Classification
 
+Classification of objects is essential for a machine learning model to understand various classes of objects present in the video or image: for example, classifying a human, or a tennis ball is the first practical step towards analyzing the image. Most image classification models are trained on ImageNet and use CNNs.
+
 - [Image Classification](https://github.com/microsoft/computervision-recipes/tree/master/scenarios/classification) 
 
 ## Detection
 
-Object detection is a technique that allows you to detect the an object within an image (usually by specifying a bounding box).
+Detection of objects from images or videos is a fundamental task in deep vision: typically, it involves finding a bounding box for an object. Detection is usually done with R-CNN (Region based CNN).
 
 - [Detect objects in images](https://docs.microsoft.com/en-us/azure/cognitive-services/computer-vision/concept-object-detection)
 - [Brand detection](https://docs.microsoft.com/en-us/azure/cognitive-services/computer-vision/concept-brand-detection)
 
 ## Segmentation
 
+Segmentation is the next step from classification and detection, dividing the image to segments on the pixel level. Because objects are often occluded in images, with parts of one blocking another, instance segmentation helps identifying entire objects regardless of occlusion. Some examples of networks that semantic segmentation models use are Mask R-CNN.
+
 - **Segmentation** - image classification is a machine learning technique to learn and predict the category of a given image. [Segmentation](https://github.com/microsoft/computervision-recipes/tree/master/scenarios/segmentation)
+
+## Object Tracking
+
+Object Tracking is another task in deep vision that deals with video and objects displacement over time. 
 
 ## Keypoints
 
