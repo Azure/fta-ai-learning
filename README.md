@@ -79,6 +79,18 @@ model = Model.register(model_path = "./models",
 
 ```
 
+Now, referencing your models becomes easy, simply pass your workspace and model name and in your code, you have a reference to the model:
+
+```python
+
+model = Model(workspace, 'TestModel')
+You can check the path in the cloud of the model you just deployed, note that registration automatically versions your models:
+
+Model.get_model_path('TestModel', _workspace=workspace)
+```
+
+The location of your registered model in the workspace will become important in the next steps, because you’ll need to reference this model in your scoring script’s initialization, when this model is loaded by your service.
+
 
 - **Deploying Machine Learning** - deploy ML models in Azure ([Notebook](notebooks/DeployingML.ipynb))
 - [Deploying to Azure Kubernetes Service (AKS)](https://github.com/microsoft/computervision-recipes/blob/master/scenarios/classification/22_deployment_on_azure_kubernetes_service.ipynb)
