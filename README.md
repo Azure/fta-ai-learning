@@ -41,7 +41,7 @@ Detection of objects from images or videos is a fundamental task in deep vision:
 
 Segmentation is the next step from classification and detection, dividing the image to segments on the pixel level. Because objects are often occluded in images, with parts of one blocking another, instance segmentation helps identifying entire objects regardless of occlusion. Some examples of networks that semantic segmentation models use are Mask R-CNN.
 
-- **Segmentation** - image classification is a machine learning technique to learn and predict the category of a given image. [Segmentation](https://github.com/microsoft/computervision-recipes/tree/master/scenarios/segmentation)
+- Segmentation tasks ( [Training](https://github.com/microsoft/computervision-recipes/blob/master/scenarios/segmentation/01_training_introduction.ipynb) ) 
 
 ## Object Tracking
 
