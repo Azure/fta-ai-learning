@@ -84,8 +84,11 @@ Now, referencing your models becomes easy, simply pass your workspace and model 
 ```python
 
 model = Model(workspace, 'TestModel')
+
+```
 You can check the path in the cloud of the model you just deployed, note that registration automatically versions your models:
 
+```python
 Model.get_model_path('TestModel', _workspace=workspace)
 ```
 
