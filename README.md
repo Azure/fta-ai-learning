@@ -19,6 +19,12 @@ contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additio
 
 ## Getting Started 
 
+There’re several areas, or paradigms in machine learning that define most of the methods with vision AI: supervised, unsupervised and reinforcement learning. This classification is open, in fact if you dig deeply into machine learning research and theory, you’ll also discover weakly supervised, self-learning and a wealth of other methods. 
+
+- **Supervised** learning deals with datasets that include labeled data. Typical tasks for supervised learning include classification, for example classifying activities or objects on the image. For supervised learning to work, large labeled datasets are required. Fortunately, you don’t need to do most of image classification from scratch, datasets such as ImageNet contain tens of millions labeled images, and with techniques like transfer learning, you could use them in your model.
+- **Unsupervised** learning doesn’t assume that data is labeled, instead its goal is finding similarities in the data. It’s often used for self-organizing dimensionality reduction and clustering, such as K-Means. For example, if you train an unsupervised model with sufficient data containing images of athletes performing actions in different activity, such a model should be able to predict what group, or sport a given image belongs to. This method is great if you don’t have a labeled data set, but sometimes you have some labels in an unlabeled set: this scenario is often called a semi-supervised problem.
+- **Reinforcement learning (RL)** applies a concept of an agent trying to achieve the goal and receiving a reward for most positive actions. Reinforcement learning originated from game theory, theory of control, and Markov Decision Process: it is widely used for robot training, including autonomous vehicles. This book goes over several applications of reinforcement learning in sports: for movement analysis, simulation and coaching. 
+
 ## Classification
 
 - [Image Classification](https://github.com/microsoft/computervision-recipes/tree/master/scenarios/classification) 
@@ -54,7 +60,6 @@ Object detection is a technique that allows you to detect the an object within a
 ## Machine Learning Pipelines
 
 - **ML Automation** - automating ML in Azure ([Notebook](notebooks/MLAutomation.ipynb))
-
 
 
 ## Trademarks
