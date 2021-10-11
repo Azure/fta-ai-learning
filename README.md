@@ -35,7 +35,7 @@ Classification of objects is essential for a machine learning model to understan
 
 Detection of objects from images or videos is a fundamental task in deep vision: typically, it involves finding a bounding box for an object. Detection is usually done with R-CNN (Region based CNN).
 
-- Detection tasks ( [Detect objects in images](https://docs.microsoft.com/en-us/azure/cognitive-services/computer-vision/concept-object-detection) | [Brand detection](https://docs.microsoft.com/en-us/azure/cognitive-services/computer-vision/concept-brand-detection))
+- Detection tasks ( [Training](https://github.com/microsoft/computervision-recipes/blob/master/scenarios/detection/01_training_introduction.ipynb) | [Deployment](https://github.com/microsoft/computervision-recipes/blob/master/scenarios/detection/20_deployment_on_kubernetes.ipynb) | [Detecting objects in images](https://docs.microsoft.com/en-us/azure/cognitive-services/computer-vision/concept-object-detection) | [Brand detection](https://docs.microsoft.com/en-us/azure/cognitive-services/computer-vision/concept-brand-detection))
 
 ## Segmentation Tasks
 
