@@ -51,13 +51,7 @@ Object Tracking is another task in deep vision that deals with video and objects
 
 Keypoints detection, in particular human keypoints detection, is the task of estimating human body pose, typically based on the model that consists of human body parts and joints. ( [Human Keypoints Detection](https://github.com/kevinash/ai-in-sports/blob/master/4.5_HumanBodyKeypoints.ipynb) )
 
-## 3D Pose Estimation
-
-## Video Action Recognition
-
-## Azure Machine Learning
-
-## Cognitive Services
+## Action Recognition
 
 ## Deploying Machine Learning in Azure 
 
@@ -68,6 +62,7 @@ Keypoints detection, in particular human keypoints detection, is the task of est
 
 - **ML Automation** - automating ML in Azure ([Notebook](notebooks/MLAutomation.ipynb))
 
+## Cognitive Services
 
 ## Trademarks
 
