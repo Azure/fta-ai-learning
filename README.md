@@ -23,7 +23,12 @@ contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additio
 
 ### Classification
 
+- [Image Classification](https://github.com/microsoft/computervision-recipes/tree/master/scenarios/classification) 
+
 ### Detection
+
+- [Detect objects in images](https://docs.microsoft.com/en-us/azure/cognitive-services/computer-vision/concept-object-detection)
+- [Brand detection](https://docs.microsoft.com/en-us/azure/cognitive-services/computer-vision/concept-brand-detection)
 
 ### Segmentation
 
