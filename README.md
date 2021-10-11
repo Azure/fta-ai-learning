@@ -1,4 +1,4 @@
-# Azure Vision AI Resources
+# FTA LIVE Azure Vision AI Resources
 
 > FTA team: this resource contains examples, content, best practices and guidance
 > for AI/ML
