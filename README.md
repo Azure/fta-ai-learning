@@ -29,7 +29,8 @@ There’re several areas, or paradigms in machine learning that define most of t
 
 Classification of objects is essential for a machine learning model to understand various classes of objects present in the video or image: for example, classifying a human, or a tennis ball is the first practical step towards analyzing the image. Most image classification models are trained on ImageNet and use CNNs.
 
-- [Image Classification](https://github.com/microsoft/computervision-recipes/tree/master/scenarios/classification) 
+-  [Image Classification](https://github.com/microsoft/computervision-recipes/tree/master/scenarios/classification) 
+- Build a classifier using Azure Custom vision - [Quick Start](https://docs.microsoft.com/en-us/azure/cognitive-services/custom-vision-service/getting-started-build-a-classifier)
 
 ## Detection
 
