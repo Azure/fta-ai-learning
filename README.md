@@ -49,7 +49,7 @@ Object Tracking is another task in deep vision that deals with video and objects
 
 ## Keypoints
 
-- **Human body keypoints** - [Notebook](https://github.com/kevinash/ai-in-sports/blob/master/4.5_HumanBodyKeypoints.ipynb)
+Keypoints detection, in particular human keypoints detection, is the task of estimating human body pose, typically based on the model that consists of human body parts and joints. ( [Human Keypoints Detection](https://github.com/kevinash/ai-in-sports/blob/master/4.5_HumanBodyKeypoints.ipynb) )
 
 ## 3D Pose Estimation
 
