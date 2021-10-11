@@ -60,7 +60,25 @@ Keypoints detection, in particular human keypoints detection, is the task of est
 
 ## Action Recognition
 
+## Managing Models in Azure
+
+The term CI/CD (Continuous Integration/Continuous Delivery) many times referring to the development cycle in machine learning, and in this section we’ll be going over some practical examples of taking your research to the level of best practices and standards used in modern data science. 
+
 ## Deploying Machine Learning in Azure 
+
+The first step in deploying your models is registering them in the workspace, this saves them in the cloud so they can be used later from your code:
+
+```python
+
+from azureml.core.model import Model
+
+model = Model.register(model_path = "./models",
+             model_name = "TestModel",
+             description = "Classification",
+             workspace = workspace)
+
+```
+
 
 - **Deploying Machine Learning** - deploy ML models in Azure ([Notebook](notebooks/DeployingML.ipynb))
 - [Deploying to Azure Kubernetes Service (AKS)](https://github.com/microsoft/computervision-recipes/blob/master/scenarios/classification/22_deployment_on_azure_kubernetes_service.ipynb)
