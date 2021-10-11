@@ -25,6 +25,10 @@ There’re several areas, or paradigms in machine learning that define most of t
 - **Unsupervised** learning doesn’t assume that data is labeled, instead its goal is finding similarities in the data. It’s often used for self-organizing dimensionality reduction and clustering, such as K-Means. For example, if you train an unsupervised model with sufficient data containing images of athletes performing actions in different activity, such a model should be able to predict what group, or sport a given image belongs to. This method is great if you don’t have a labeled data set, but sometimes you have some labels in an unlabeled set: this scenario is often called a semi-supervised problem.
 - **Reinforcement learning (RL)** applies a concept of an agent trying to achieve the goal and receiving a reward for most positive actions. Reinforcement learning originated from game theory, theory of control, and Markov Decision Process: it is widely used for robot training, including autonomous vehicles. This book goes over several applications of reinforcement learning in sports: for movement analysis, simulation and coaching. 
 
+## Azure Tools
+
+Azure supports all of the familiar data science frameworks. Many data scientists use open source tools, such as Python, R, Lua and Julia became very popular. If you have a specific tool you like: you can alsways package your environment in an [Azure virtual machine](https://docs.microsoft.com/en-us/azure/virtual-machines/), serving a wide variety of operating systems, types of processors, storage and configurations. 
+
 ## Classification Tasks
 
 Classification of objects is essential for a machine learning model to understand various classes of objects present in the video or image: for example, classifying a human, or a tennis ball is the first practical step towards analyzing the image. Most image classification models are trained on ImageNet and use CNNs.
