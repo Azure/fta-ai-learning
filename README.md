@@ -27,14 +27,18 @@ contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additio
 
 ### Detection
 
+Object detection is a technique that allows you to detect the an object within an image (usually by specifying a bounding box).
+
 - [Detect objects in images](https://docs.microsoft.com/en-us/azure/cognitive-services/computer-vision/concept-object-detection)
 - [Brand detection](https://docs.microsoft.com/en-us/azure/cognitive-services/computer-vision/concept-brand-detection)
 
 ### Segmentation
 
-- [Segmentation](https://github.com/microsoft/computervision-recipes/tree/master/scenarios/segmentation)
+- **Segmentation** - image classification is a machine learning technique to learn and predict the category of a given image. [Segmentation](https://github.com/microsoft/computervision-recipes/tree/master/scenarios/segmentation)
 
-## Human Analytics with Azure Vision AI
+## Keypoints
+
+- **Human body keypoints** - [Notebook](https://github.com/kevinash/ai-in-sports/blob/master/4.5_HumanBodyKeypoints.ipynb)
 
 ### Introducing Pose Estimation
 
