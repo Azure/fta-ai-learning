@@ -73,11 +73,26 @@ Keypoints detection, in particular human keypoints detection, is the task of est
 
 Action recognition typically involves analyzing actions over time. Kinetics is an example of a dataset targeting action recognition.
 
-## Managing Models in Azure
+## Working with AI in Azure
+
+Task | Definition
+------------ | -------------
+Registering Models | To make a model available for your client, the model needs to be deployed, so you can give your clients something like a link to an API, and then they can use it in their own apps.
+Model Management | 
+Defining a Compute Environment | 
+Creating a scoring script | 
+Runtime Environment | 
+Training a model |
+Calling a model endpoint | 
+Continuous model delivery | 
+
+
+
+### Managing Models
 
 The term CI/CD (Continuous Integration/Continuous Delivery) many times referring to the development cycle in machine learning, and in this section we’ll be going over some practical examples of taking your research to the level of best practices and standards used in modern data science. 
 
-## Deploying Machine Learning in Azure 
+### Deploying Machine Learning 
 
 The first step in deploying your models is registering them in the workspace, this saves them in the cloud so they can be used later from your code:
 
