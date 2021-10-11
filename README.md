@@ -17,6 +17,12 @@ This project has adopted the [Microsoft Open Source Code of Conduct](https://ope
 For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or
 contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
 
+## Explore Vision AI with Azure
+
+Azure supports all of the familiar data science frameworks. Many data scientists use open source tools, such as Python, R, Lua and Julia became very popular. If you have a specific tool you like: you can alsways package your environment in an [Azure virtual machine](https://docs.microsoft.com/en-us/azure/virtual-machines/), serving a wide variety of operating systems, types of processors, storage and configurations. 
+
+[Azure Cognitive Services](https://docs.microsoft.com/en-us/azure/cognitive-services/what-are-cognitive-services) provide a shortcut to many pretrained models and methods packaged for scale and efficiency as part of Cognitive Services APIs. Azure Cognitive Services are cloud-based services with REST APIs and client library SDKs available to help you build cognitive intelligence into your applications. You can add cognitive features to your applications without having artificial intelligence (AI) or data science skills. Azure Cognitive Services comprise various AI services that enable you to build cognitive solutions that can see, hear, speak, understand, and even make decisions. 
+
 ## Getting Started 
 
 There’re several areas, or paradigms in machine learning that define most of the methods with vision AI: supervised, unsupervised and reinforcement learning. This classification is open, in fact if you dig deeply into machine learning research and theory, you’ll also discover weakly supervised, self-learning and a wealth of other methods. 
@@ -24,12 +30,6 @@ There’re several areas, or paradigms in machine learning that define most of t
 - **Supervised** learning deals with datasets that include labeled data. Typical tasks for supervised learning include classification, for example classifying activities or objects on the image. For supervised learning to work, large labeled datasets are required. Fortunately, you don’t need to do most of image classification from scratch, datasets such as ImageNet contain tens of millions labeled images, and with techniques like transfer learning, you could use them in your model.
 - **Unsupervised** learning doesn’t assume that data is labeled, instead its goal is finding similarities in the data. It’s often used for self-organizing dimensionality reduction and clustering, such as K-Means. For example, if you train an unsupervised model with sufficient data containing images of athletes performing actions in different activity, such a model should be able to predict what group, or sport a given image belongs to. This method is great if you don’t have a labeled data set, but sometimes you have some labels in an unlabeled set: this scenario is often called a semi-supervised problem.
 - **Reinforcement learning (RL)** applies a concept of an agent trying to achieve the goal and receiving a reward for most positive actions. Reinforcement learning originated from game theory, theory of control, and Markov Decision Process: it is widely used for robot training, including autonomous vehicles. This book goes over several applications of reinforcement learning in sports: for movement analysis, simulation and coaching. 
-
-## Explore Azure Tools for AI
-
-Azure supports all of the familiar data science frameworks. Many data scientists use open source tools, such as Python, R, Lua and Julia became very popular. If you have a specific tool you like: you can alsways package your environment in an [Azure virtual machine](https://docs.microsoft.com/en-us/azure/virtual-machines/), serving a wide variety of operating systems, types of processors, storage and configurations. 
-
-[Azure Cognitive Services](https://docs.microsoft.com/en-us/azure/cognitive-services/what-are-cognitive-services) provide a shortcut to many pretrained models and methods packaged for scale and efficiency as part of Cognitive Services APIs. Azure Cognitive Services are cloud-based services with REST APIs and client library SDKs available to help you build cognitive intelligence into your applications. You can add cognitive features to your applications without having artificial intelligence (AI) or data science skills. Azure Cognitive Services comprise various AI services that enable you to build cognitive solutions that can see, hear, speak, understand, and even make decisions. 
 
 ## Vision AI Tasks in Azure
 
