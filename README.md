@@ -23,6 +23,15 @@ Azure supports all of the familiar data science frameworks. Many data scientists
 
 [Azure Cognitive Services](https://docs.microsoft.com/en-us/azure/cognitive-services/what-are-cognitive-services) provide a shortcut to many pretrained models and methods packaged for scale and efficiency as part of Cognitive Services APIs. Azure Cognitive Services are cloud-based services with REST APIs and client library SDKs available to help you build cognitive intelligence into your applications. You can add cognitive features to your applications without having artificial intelligence (AI) or data science skills. Azure Cognitive Services comprise various AI services that enable you to build cognitive solutions that can see, hear, speak, understand, and even make decisions. 
 
+Task | Definition
+------------ | -------------
+Vision | 
+Language | 
+Speech |
+Decision | 
+Search |
+Cognitive Services Containers |
+
 ## Getting Started 
 
 There’re several areas, or paradigms in machine learning that define most of the methods with vision AI: supervised, unsupervised and reinforcement learning. This classification is open, in fact if you dig deeply into machine learning research and theory, you’ll also discover weakly supervised, self-learning and a wealth of other methods. 
@@ -41,7 +50,6 @@ Segmentation | Segmentation is the next step from classification and detection, 
 Tracking | Object Tracking is another task in deep vision that deals with video and objects displacement over time.  
 Keypoints | Keypoints detection, in particular human keypoints detection, is the task of estimating human body pose, typically based on the model that consists of human body parts and joints.
 Action Recognition | Action recognition typically involves analyzing actions over time. Kinetics is an example of a dataset targeting action recognition.
-
 
 ### Classification 
 
