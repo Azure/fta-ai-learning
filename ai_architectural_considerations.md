@@ -12,11 +12,13 @@ Compliance and governance | Making AI/ML model comply with government or corpora
 
 ![Architectural Decisions](/images/key-decisions.png)
 
+Overall these metrics and decisions for AI/ML roll into an overall architecture including data strategy, personalization, operationalization and automation. 
+
 ![Architectural Decisions](/images/architectural-decisions.PNG)
 
 ## Getting Started with AI
 
-Your business may be just beginning with AI 
+Your business may be just beginning with AI, many customers are looking into ways to integrate AI/ML solutions. Typically this exploration begins with inference and pre-built services and models like Azure Cognitive Services, providing a convenient and easy interface and a collection of tested and pre-trained models. 
 
 ![Getting Started](/images/getting-started.png)
 
