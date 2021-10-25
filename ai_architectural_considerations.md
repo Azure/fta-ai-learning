@@ -38,9 +38,9 @@ Many open-source machine learning libraries like PyTorch, Tensorflow include pre
 
 Using a pre-trained model significantly reduces initial research and development costs, sometimes saving many months in research and requiring highly qualified data scientists to train, design and optimize models. Many models are built on the shoulders of the giants, by applying a technique called transfer learning, by leveraging feature extraction layers from an existing model, and adding your own layer to predict classes from extracted features.
 
-But cost optimization is not the only way to optimize costs and operations for a machine learning solution. 
+But cost optimization is not the only way to optimize costs and operations for a machine learning solution. Starting with determining compute for training workload, you can decide on a specific type of VM or hardware instance. This typically involves decisions on GPU/CPU or other hardware accelerated solutions, such as FPGA or ASIC. 
 
-Task | Description
+Optimization Task | Description
 ------------ | -------------
 Sizing Model Training | Determine compute size for training
 Sizing Model Inference | Determine compute size for inference
@@ -48,6 +48,8 @@ Monitoring Utilization | Tune VM size by monitoring utilization
 Node Clustering | Choose between local, single-node and multi-node compute
 Shared Compute | Optimize cost of shared compute resources
 Budgets, Cost and Quotas| Plan, manage and share budgets, cost and quota
+
+Inference sizing requires [profiling capabilities](https://docs.microsoft.com/en-us/azure/machine-learning/how-to-deploy-profile-model), provided for example by Azure Machine Learning. You can combine multiple compute types in Azure Machine Learning pipelines. 
 
 ![Monitoring and Metrics](/images/azure-portal-metrics.jpg)
 
