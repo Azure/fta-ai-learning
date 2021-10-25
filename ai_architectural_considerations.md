@@ -12,7 +12,16 @@ Compliance and governance | Making AI/ML model comply with government or corpora
 
 ![Architectural Decisions](/images/key-decisions.png)
 
-Overall these metrics and decisions for AI/ML roll into an overall architecture including data strategy, personalization, operationalization and automation. 
+Overall these metrics and decisions for AI/ML roll into an overall machine learning architecture including data strategy, personalization, operationalization and automation.
+
+Task | Description
+------------ | -------------
+Model Design and Management | Building and training models to solve ISV specific business demands
+Data | Store and maintain data for ML processes, data drift triggers
+Personalization | Provide secure and audited access to datasets and model analytical results
+Operationalization | Deploy and manage models and datasets at scale, provide effective inferencing and training, Audit and Monitoring, Release Management
+Automation | Automate all parts of the process from experimentation to model deployment and data drift management
+
 
 ![Architectural Decisions](/images/architectural-decisions.PNG)
 
