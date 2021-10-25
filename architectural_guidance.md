@@ -1,6 +1,6 @@
 # AI/ML Architectural Guidance
 
-When planning an AI/ML architecture, businesses typically envision goals and metrics around their existing solutions
+When planning an AI/ML architecture, there's a number of decisions a business needs to make depending on goals and key metrics that a solution requires. These planning considerations are important, because they can help designing scaleable AI/ML solutions that perform well under load, provide accurate results, and optimize costs and operations for any architectural changes that may be needed. 
 
 Metric | Description
 ------------ | -------------
