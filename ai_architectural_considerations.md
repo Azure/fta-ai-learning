@@ -22,16 +22,29 @@ Personalization | Provide secure and audited access to datasets and model analyt
 Operationalization | Deploy and manage models and datasets at scale, provide effective inferencing and training, Audit and Monitoring, Release Management
 Automation | Automate all parts of the process from experimentation to model deployment and data drift management
 
-
 ![Architectural Decisions](/images/architectural-decisions.PNG)
 
 ## Getting Started with AI
 
-Your business may be just beginning with AI, many customers are looking into ways to integrate AI/ML solutions. Typically this exploration begins with inference and pre-built services and models like Azure Cognitive Services, providing a convenient and easy interface and a collection of tested and pre-trained models. 
+Your business may be just beginning with AI, many customers are looking into ways to integrate AI/ML solutions. Typically this exploration begins with inference and pre-built services and models like [Azure Cognitive Services](https://azure.microsoft.com/en-us/services/cognitive-services), providing a convenient and easy interface and a collection of tested and pre-trained models.
 
 ![Getting Started](/images/getting-started.png)
 
 ## Optimize costs and operations
+
+Using a pre-trained model significantly reduces initial research and development costs, sometimes saving many months in research and requiring highly qualified data scientists to train, design and optimize models. Many models are built on the shoulders of the giants, by applying a technique called transfer learning, by leveraging feature extraction layers from an existing model, and adding your own layer to predict classes from extracted features.
+
+But cost optimization is not the only way to optimize costs and operations for a machine learning solution. 
+
+Task | Description
+------------ | -------------
+Sizing Model Training | Determine compute size for training
+Sizing Model Inference | Determine compute size for inference
+Monitoring Utilization | Tune VM size by monitoring utilization
+Node Clustering | Choose between local, single-node and multi-node compute
+Shared Compute | Optimize cost of shared compute resources
+Budgets, Cost and Quotas| Plan, manage and share budgets, cost and quota
+
 
 ![Optimize costs and operations](/images/costs.png)
 
