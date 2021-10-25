@@ -10,6 +10,8 @@ Optimize costs and operations | Architectural optimization of existing AI/ML ope
 Increase scale and performance | Scale/performance may depend on many factors, for example a number of users or geographic availability
 Compliance and governance | Making AI/ML model comply with government or corporate policies
 
+![Architectural Decisions](/images/key-decisions.png)
+
 ![Architectural Decisions](/images/architectural-decisions.PNG)
 
 ## Getting Started with AI
