@@ -1,6 +1,10 @@
 # AI/ML Architectural Considerations
 
-When planning an AI/ML architecture, there's a number of decisions a business needs to make depending on goals and key metrics that customers require. These planning considerations are important, because they can help designing scalable and efficient AI/ML solutions that provide accurate results, perform well under load, and optimize costs and operations for any architectural changes that may be needed. Look at this table of key decisions and try to identify metrics important for your business:
+When planning an AI/ML architecture, there's a number of decisions a business needs to make depending on goals and key metrics that customers require. These planning considerations are important, because they can help designing scalable and efficient AI/ML solutions that provide accurate results, perform well under load, and optimize costs and operations for any architectural changes that may be needed.  
+
+The pace of adopting artificial intelligence methods in businesses grows very rapidly in the last few years, because of increased accuracy and size of machine learning models, and there's a need in architectural guidance for accurate, reliable and scalable AI/ML solutions. If your business is just experimenting with AI/ML, or already deploying a solution that serves multiple customers, you need a good foundation for AI/ML architecture.
+
+Look at this table of key decisions and try to identify metrics important for your business when applying AI/ML:
 
 Metric | Description
 ------------ | -------------
@@ -10,9 +14,7 @@ Optimize costs and operations | Architectural optimization of existing AI/ML ope
 Increase scale and performance | Scale/performance may depend on many factors, for example a number of users or geographic availability
 Compliance and governance | Making AI/ML model comply with government or corporate policies
 
-![Architectural Decisions](/images/key-decisions.png)
-
-Overall these metrics and decisions for AI/ML roll into an overall machine learning architecture including data strategy, personalization, operationalization and automation.
+These metrics and key decisions for AI/ML roll into a broader machine learning architecture including data strategy, personalization, operationalization and automation. Typically, as part of this wider architecture, you'll deal not only with data science specific tasks, such as model training, management and deployment, but also with needs to maintain data store, providing a secure audited access to analytical results, release management and process automation. 
 
 Task | Description
 ------------ | -------------
@@ -44,8 +46,6 @@ Monitoring Utilization | Tune VM size by monitoring utilization
 Node Clustering | Choose between local, single-node and multi-node compute
 Shared Compute | Optimize cost of shared compute resources
 Budgets, Cost and Quotas| Plan, manage and share budgets, cost and quota
-
-![Optimize costs and operations](/images/costs.png)
 
 ![Monitoring and Metrics](/images/azure-portal-metrics.jpg)
 
