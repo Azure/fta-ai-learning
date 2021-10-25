@@ -10,11 +10,27 @@ Optimize costs and operations | Architectural optimization of existing AI/ML ope
 Increase scale and performance | Scale/performance may depend on many factors, for example a number of users or geographic availability
 Compliance and governance | Making AI/ML model comply with government or corporate policies
 
-![]
+![Architectural Decisions](/images/architectural-decisions.png)
 
 ## Getting Started with AI
 
 Your business may be just beginning with AI 
+
+![Getting Started](/images/getting-started.png)
+
+## Optimize costs and operations
+
+![Optimize costs and operations](/images/costs.png)
+
+## Optimizing model accuracy
+
+![Optimizing Model Accuracy](/images/accuracy.png)
+
+## Increase scale and performance
+
+![Scale and Performance](/images/azure-portal-metrics.png)
+
+## Compliance and governance
 
 ## Contributing
 
