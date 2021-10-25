@@ -16,7 +16,9 @@ Compliance and governance | Making AI/ML model comply with government or corpora
 
 These metrics and key decisions for AI/ML roll into a broader machine learning architecture including data strategy, personalization, operationalization and automation. Typically, as part of this wider architecture, you'll deal not only with data science specific tasks, such as model training, management and deployment, but also with needs to maintain data store, providing a secure audited access to analytical results, release management and process automation. 
 
-Task | Description
+![Architectural Decisions](/images/architectural-decisions.PNG)
+
+Area | Tasks
 ------------ | -------------
 Model Design and Management | Building and training models to solve ISV specific business demands
 Data | Store and maintain data for ML processes, data drift triggers
@@ -24,13 +26,13 @@ Personalization | Provide secure and audited access to datasets and model analyt
 Operationalization | Deploy and manage models and datasets at scale, provide effective inferencing and training, Audit and Monitoring, Release Management
 Automation | Automate all parts of the process from experimentation to model deployment and data drift management
 
-![Architectural Decisions](/images/architectural-decisions.PNG)
-
 ## Getting Started with AI
 
-Your business may be just beginning with AI, many customers are looking into ways to integrate AI/ML solutions. Typically this exploration begins with inference and pre-built services and models like [Azure Cognitive Services](https://azure.microsoft.com/en-us/services/cognitive-services), providing a convenient and easy interface and a collection of tested and pre-trained models.
+Your business may be just beginning with AI, many customers are looking into ways to integrate AI/ML solutions. Typically this exploration begins with inference and pre-built services and models like [Azure Cognitive Services](https://azure.microsoft.com/en-us/services/cognitive-services), providing a convenient and easy interface and a collection of tested and pre-trained models. 
 
 ![Getting Started](/images/getting-started.png)
+
+Many open-source machine learning libraries like PyTorch, Tensorflow include pre-trained models that can be deployed as part of your solution and used locally or at scale in a cloud compute environment.
 
 ## Optimize costs and operations
 
