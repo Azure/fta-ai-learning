@@ -1,6 +1,6 @@
 # AI/ML Architectural Considerations
 
-When planning an AI/ML architecture, there's a number of decisions a business needs to make depending on goals and key metrics that customers require. These planning considerations are important, because they can help designing scaleable and efficient AI/ML solutions that provide accurate results, perform well under load, and optimize costs and operations for any architectural changes that may be needed. 
+When planning an AI/ML architecture, there's a number of decisions a business needs to make depending on goals and key metrics that customers require. These planning considerations are important, because they can help designing scaleable and efficient AI/ML solutions that provide accurate results, perform well under load, and optimize costs and operations for any architectural changes that may be needed. Look at this table of key decisions and try to identify metrics important for your business:
 
 Metric | Description
 ------------ | -------------
