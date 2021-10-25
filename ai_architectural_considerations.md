@@ -45,8 +45,9 @@ Node Clustering | Choose between local, single-node and multi-node compute
 Shared Compute | Optimize cost of shared compute resources
 Budgets, Cost and Quotas| Plan, manage and share budgets, cost and quota
 
-
 ![Optimize costs and operations](/images/costs.png)
+
+![Monitoring and Metrics](/images/azure-portal-metrics.jpg)
 
 ## Optimizing model accuracy
 
@@ -54,7 +55,7 @@ Budgets, Cost and Quotas| Plan, manage and share budgets, cost and quota
 
 ## Increase scale and performance
 
-![Scale and Performance](/images/azure-portal-metrics.png)
+![Scale and Performance](/images/scale.png)
 
 ## Compliance and governance
 
