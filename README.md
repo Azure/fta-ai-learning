@@ -17,9 +17,46 @@ This project has adopted the [Microsoft Open Source Code of Conduct](https://ope
 For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or
 contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
 
-## Explore Vision AI with Azure
+## Key Decisions 
 
-Azure supports all of the familiar data science frameworks. Many data scientists use open source tools, such as Python, R, Lua and Julia became very popular. If you have a specific tool you like: you can alsways package your environment in an [Azure virtual machine](https://docs.microsoft.com/en-us/azure/virtual-machines/), serving a wide variety of operating systems, types of processors, storage and configurations. 
+When planning a vision AI/ML architecture in Azure, there's a number of decisions a business needs to make. These considerations are important, because they can help designing scalable and efficient AI/ML solutions that provide accurate results, perform well under load, and optimize costs and operations for any architectural changes that may be needed in the future in different environments. A robust AI/ML solution is one that provides the same services and capabilities to a growing number of clients. With customers using Azure machine learning, a scalable architecture would provide a level of insulation not only for data, but also for compute environments, including models, training and inference configurations for multiple tenants and remain responsive under load. With the pace of adopting artificial intelligence growing very rapidly in the last few years, increased accuracy and size of machine learning models and how these models get deployed, distributed and orchestrated, there's a need in architectural guidance for accurate, reliable and scalable AI/ML solutions. 
+
+### Scalability
+
+Scaling a machine learning solution that is typically created as a result of experimentation by a data science team often involves two key parts: AI/ML model training and inference scaling. Each scaling scenario involves a need to increase the size of tenant and possibly, the amount of data needed to train the models and the number of clients that access the models for inference. A typical decision here is between pre-configured Azure Cognitive Services, or custom deployed via Azure Kubernetes Services (AKS) and Azure Container Instances (ACI). Solution architects need to consider how they reconcile between maintaining a sufficiently low level of complexity and designing the solution to scale with number of tenants and the size of tenants' data and workload. AI/ML vision applications may need to effectively serve clients which are distributed across the globe. The goal is optimizing your solution to run with just enough capacity for your average workload.  
+
+### Performance
+
+Taking advantage of Azure high-performance computing (HPC) for machine learning and AI workloads in vision scenarios. Determining compute needs for training workloads, you can decide on a specific type of VMs or hardware instance for each of your tenants. This typically involves decisions on training and inference models based on CPU, GPU, FPGA or other hardware accelerated environments. For inference, an important decision for performance is often determined by latency requirements. Depending on your needs, Azure can provide real-time inference with NVIDIA GPUs, including NVIDIA Triton Inference servers.
+
+Key decisions for performance gains for an AI/ML solution are part of a broader machine learning architecture planning, including data strategy, personalization, operationalization and automation. Typically, as part of this wider architecture, you'll deal not only with data science specific tasks, such as model training, management and deployment, but also with needs to maintain data stores, providing a secure audited access to analytical results, release management and process automation.
+
+Performance improvements often involve decisions on distributing and managing distributed clusters and nodes for compute tasks. Inference sizing requires [profiling capabilities](https://docs.microsoft.com/en-us/azure/machine-learning/how-to-deploy-profile-model), provided for example by Azure Machine Learning. 
+
+### Model Isolation
+
+The key to a model isolation for multi-tenant AI/ML architectures is providing isolation to data and trained models that were trained on a tenant data. Machine learning architects need to take measures to ensure that no tenants have unauthorized or unwanted access to the data or models of other tenants.
+
+### Costs 
+
+As with any other solution, AI/ML solutions must remain cost competitive as a component of a vision application. The goal is optimizing your solution to provide training and inference results with just enough capacity for your average workload. Generally, higher costs are incurred with the use of real-time compute resources for inference and model training. When developing a multitenant architecture, the impact on the application's operations and complexity is an important consideration and may impact costs.
+
+Using a pre-configured service (like Azure Cognitive Services) or a pre-trained model significantly reduces initial research and development costs, sometimes saving many months in research and requiring highly qualified data scientists to train, design and optimize models. Many models are built on the shoulders of the giants, by applying a technique called transfer learning, by leveraging feature extraction layers from an existing model, and adding your own layer to predict classes from extracted features.
+
+But using pre-built models or services is not the only way to optimize costs and operations for a machine learning solution in the context of multi-tenancy. Starting with determining compute for training workload, you can decide on a specific type of VMs or hardware instance for each of your tenants. This typically involves decisions on training and inference models based on CPU, [GPU](https://docs.microsoft.com/en-us/azure/machine-learning/how-to-deploy-inferencing-gpus), [FPGA](https://docs.microsoft.com/en-us/azure/machine-learning/how-to-deploy-fpga-web-service) or other hardware accelerated environments, latency requirements for inference and training of your models.
+
+This checklist may help if you're planning cost optimization for your multitenant AI/ML solution:
+
+Optimization Task | Description
+------------ | -------------
+Sizing Model Training | Determine compute size for training
+Sizing Model Inference | Determine compute size for inference
+Monitoring Utilization | Tune VM size by monitoring utilization
+Node Clustering | Choose between local, single-node and multi-node compute
+Shared Compute | Optimize cost of shared compute resources
+Budgets, Cost and Quotas| Plan, manage and share budgets, cost and quota
+
+Let's look at some common scenarios for developing a multitenant AI/ML application or service. Azure supports all of the familiar data science frameworks. Many data scientists use open source tools, such as Python, R, Lua and Julia became very popular. If you have a specific tool you like: you can alsways package your environment in an [Azure virtual machine](https://docs.microsoft.com/en-us/azure/virtual-machines/), serving a wide variety of operating systems, types of processors, storage and configurations. 
 
 [Azure Cognitive Services](https://docs.microsoft.com/en-us/azure/cognitive-services/what-are-cognitive-services) provide a shortcut to many pretrained models and methods packaged for scale and efficiency as part of Cognitive Services APIs. Azure Cognitive Services are cloud-based services with REST APIs and client library SDKs available to help you build cognitive intelligence into your applications. You can add cognitive features to your applications without having artificial intelligence (AI) or data science skills. Azure Cognitive Services comprise various AI services that enable you to build cognitive solutions that can see, hear, speak, understand, and even make decisions. 
 
@@ -31,6 +68,24 @@ Speech |
 Decision | 
 Search |
 Cognitive Services Containers |
+
+## Scenario: Using Cognitive Services
+
+In this scenario (or if you mostly use inference based AI/ML solutions), your business may be just beginning using AI, and looking into ways to orchestrate multiple AI/ML models. Typically this exploration begins with inference and pre-built services, like [Azure Cognitive Services](https://azure.microsoft.com/en-us/services/cognitive-services), providing a convenient and easy interface and a collection of tested and pre-trained models. Azure Cognitive Services provide an easy start with SaaS solutions, for example [Azure Cognitive Search](https://docs.microsoft.com/en-us/azure/search/search-what-is-azure-search) offered as a service provides [design patterns for multitenant isolation](https://docs.microsoft.com/en-us/azure/search/search-modeling-multitenant-saas-applications), ease of operations (with a 99.9% SLA) and scalability. Integrating Cognitive Services is the easiest first step to any solution getting started with a multitenant AI/ML project.
+
+Developing vision AI applications based on Cognitive Services requires effectively distributing resources, while providing a level of privacy between tenants.
+
+* Scale and Isolation: developers need to take measures to ensure that no tenants have unauthorized or unwanted access to the data of other tenants. 
+
+* Cloud resource costs: As with any other application, software solutions must remain cost competitive as a component of a multitenant application.
+
+* Ease of Operations: When developing a multitenant architecture, the impact on the application's operations and complexity is an important consideration. 
+
+* Global scale: multitenant applications may need to effectively serve tenants which are distributed across the globe.
+
+* Scalability: Application developers need to consider how they reconcile between maintaining a sufficiently low level of application complexity and designing the application to scale with number of tenants and the size of tenants' data and workload. 
+
+![Getting Started](/guide/multitenant/approaches/media/ai-ml/getting-started.png)
 
 ## Getting Started 
 
@@ -82,60 +137,6 @@ Keypoints detection, in particular human keypoints detection, is the task of est
 ### Action Recognition
 
 Action recognition typically involves analyzing actions over time. Kinetics is an example of a dataset targeting action recognition.
-
-## Working with AI in Azure
-
-Task | Definition
------------- | -------------
-Model Management | To make a model available for your client, the model needs to be deployed, so you can give your clients something like a link to an API, and then they can use it in their own apps.
-Defining Compute Environments | 
-Training models |
-Continuous model delivery | 
-Using Models in your apps |
-
-
-### Managing Models
-
-The term CI/CD (Continuous Integration/Continuous Delivery) many times referring to the development cycle in machine learning, and in this section we’ll be going over some practical examples of taking your research to the level of best practices and standards used in modern data science. 
-
-### Deploying Machine Learning 
-
-The first step in deploying your models is registering them in the workspace, this saves them in the cloud so they can be used later from your code:
-
-```python
-
-from azureml.core.model import Model
-
-model = Model.register(model_path = "./models",
-             model_name = "TestModel",
-             description = "Classification",
-             workspace = workspace)
-
-```
-
-Now, referencing your models becomes easy, simply pass your workspace and model name and in your code, you have a reference to the model:
-
-```python
-
-model = Model(workspace, 'TestModel')
-
-```
-You can check the path in the cloud of the model you just deployed, note that registration automatically versions your models:
-
-```python
-Model.get_model_path('TestModel', _workspace=workspace)
-```
-
-The location of your registered model in the workspace will become important in the next steps, because you’ll need to reference this model in your scoring script’s initialization, when this model is loaded by your service.
-
-- More on deploying ML models in Azure ( [Notebook](notebooks/DeployingML.ipynb) | [Deploying to Azure Kubernetes Service](https://github.com/microsoft/computervision-recipes/blob/master/scenarios/classification/22_deployment_on_azure_kubernetes_service.ipynb) )
- 
-
-## Machine Learning Pipelines
-
-- **ML Automation** - automating ML in Azure ([Notebook](notebooks/MLAutomation.ipynb))
-
-## Cognitive Services
 
 ## Trademarks
 
