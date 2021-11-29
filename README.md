@@ -21,6 +21,17 @@ contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additio
 
 To improve the efficacy of visual inspection, enterprises began turning to deep learning artificial neural networks known as convolutional neural networks (or CNNs), to emulate human vision for analysis of images and video. Today this is commonly called computer vision, or simply Vision AI. Artificial intelligence for image analytics spans a wide variety of industries, including manufacturing, retail, healthcare, and the public sector, and an equally wide area of use cases.
 
+## Typical Vision AI Tasks
+
+Task | Definition
+------------ | -------------
+Classification | Classification of objects is essential for a machine learning model to understand various classes of objects present in the video or image: for example, classifying a human, or a tennis ball is the first practical step towards analyzing the image. Examples of image classification models include ImageNet and CNNs.
+Detection | Detection of objects from images or videos is a fundamental task in deep vision: typically, it involves finding a bounding box for an object. Examples of detection models include R-CNN (Region based CNN).
+Segmentation | Segmentation is the next step from classification and detection, dividing the image to segments on the pixel level. Because objects are often occluded in images, with parts of one blocking another, instance segmentation helps identifying entire objects regardless of occlusion. Some examples of networks that semantic segmentation models use are Mask R-CNN.
+Tracking | Object Tracking is another task in deep vision that deals with video and objects displacement over time.  
+Keypoints | Keypoints detection, in particular human keypoints detection, is the task of estimating human body pose, typically based on the model that consists of human body parts and joints.
+Action Recognition | Action recognition typically involves analyzing actions over time. Kinetics is an example of a dataset targeting action recognition.
+
 ## Key Considerations 
 
 When planning a vision AI/ML architecture in Azure, there's a number of decisions a business needs to make. These considerations are important, because they can help designing scalable and efficient AI/ML vision solutions that provide accurate results, perform well under load, and optimize costs and operations for any architectural changes that may be needed in the future in different environments. A robust AI/ML solution is one that provides the same services and capabilities to a growing number of clients. With customers using Azure machine learning, a scalable architecture would provide a level of insulation not only for data, but also for compute environments, including models, training and inference configurations for multiple tenants and remain responsive under load. With the pace of adopting artificial intelligence growing very rapidly in the last few years, increased accuracy and size of machine learning models and how these models get deployed, distributed and orchestrated, there's a need in architectural guidance for accurate, reliable and scalable AI/ML solutions. 
@@ -91,16 +102,6 @@ There’re several areas, or paradigms in machine learning that define most of t
 
 If you are interested in fundametals, we recommend checking [Microsoft Azure 101 Fundamentals course](https://docs.microsoft.com/en-us/learn/certifications/azure-ai-fundamentals/).
 
-## Vision AI Tasks in Azure
-
-Task | Definition
------------- | -------------
-Classification | Classification of objects is essential for a machine learning model to understand various classes of objects present in the video or image: for example, classifying a human, or a tennis ball is the first practical step towards analyzing the image. Examples of image classification models include ImageNet and CNNs.
-Detection | Detection of objects from images or videos is a fundamental task in deep vision: typically, it involves finding a bounding box for an object. Examples of detection models include R-CNN (Region based CNN).
-Segmentation | Segmentation is the next step from classification and detection, dividing the image to segments on the pixel level. Because objects are often occluded in images, with parts of one blocking another, instance segmentation helps identifying entire objects regardless of occlusion. Some examples of networks that semantic segmentation models use are Mask R-CNN.
-Tracking | Object Tracking is another task in deep vision that deals with video and objects displacement over time.  
-Keypoints | Keypoints detection, in particular human keypoints detection, is the task of estimating human body pose, typically based on the model that consists of human body parts and joints.
-Action Recognition | Action recognition typically involves analyzing actions over time. Kinetics is an example of a dataset targeting action recognition.
 
 ### Classification 
 
