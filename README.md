@@ -60,15 +60,6 @@ Let's look at some common scenarios for developing a multitenant AI/ML applicati
 
 [Azure Cognitive Services](https://docs.microsoft.com/en-us/azure/cognitive-services/what-are-cognitive-services) provide a shortcut to many pretrained models and methods packaged for scale and efficiency as part of Cognitive Services APIs. Azure Cognitive Services are cloud-based services with REST APIs and client library SDKs available to help you build cognitive intelligence into your applications. You can add cognitive features to your applications without having artificial intelligence (AI) or data science skills. Azure Cognitive Services comprise various AI services that enable you to build cognitive solutions that can see, hear, speak, understand, and even make decisions. 
 
-Area | Description
------------- | -------------
-Vision | 
-Language | 
-Speech |
-Decision | 
-Search |
-Cognitive Services Containers |
-
 ## Scenario: Using Cognitive Services
 
 In this scenario (or if you mostly use inference based AI/ML solutions), your business may be just beginning using AI, and looking into ways to orchestrate multiple AI/ML models. Typically this exploration begins with inference and pre-built services, like [Azure Cognitive Services](https://azure.microsoft.com/en-us/services/cognitive-services), providing a convenient and easy interface and a collection of tested and pre-trained models. Azure Cognitive Services provide an easy start with SaaS solutions, for example [Azure Cognitive Search](https://docs.microsoft.com/en-us/azure/search/search-what-is-azure-search) offered as a service provides [design patterns for multitenant isolation](https://docs.microsoft.com/en-us/azure/search/search-modeling-multitenant-saas-applications), ease of operations (with a 99.9% SLA) and scalability. Integrating Cognitive Services is the easiest first step to any solution getting started with a multitenant AI/ML project.
