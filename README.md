@@ -17,9 +17,13 @@ This project has adopted the [Microsoft Open Source Code of Conduct](https://ope
 For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or
 contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
 
-## Key Decisions 
+## Vision AI
 
-When planning a vision AI/ML architecture in Azure, there's a number of decisions a business needs to make. These considerations are important, because they can help designing scalable and efficient AI/ML solutions that provide accurate results, perform well under load, and optimize costs and operations for any architectural changes that may be needed in the future in different environments. A robust AI/ML solution is one that provides the same services and capabilities to a growing number of clients. With customers using Azure machine learning, a scalable architecture would provide a level of insulation not only for data, but also for compute environments, including models, training and inference configurations for multiple tenants and remain responsive under load. With the pace of adopting artificial intelligence growing very rapidly in the last few years, increased accuracy and size of machine learning models and how these models get deployed, distributed and orchestrated, there's a need in architectural guidance for accurate, reliable and scalable AI/ML solutions. 
+To improve the efficacy of visual inspection, enterprises began turning to deep learning artificial neural networks known as convolutional neural networks (or CNNs), to emulate human vision for analysis of images and video. Today this is commonly called computer vision, or simply Vision AI. Artificial intelligence for image analytics spans a wide variety of industries, including manufacturing, retail, healthcare, and the public sector, and an equally wide area of use cases.
+
+## Key Considerations 
+
+When planning a vision AI/ML architecture in Azure, there's a number of decisions a business needs to make. These considerations are important, because they can help designing scalable and efficient AI/ML vision solutions that provide accurate results, perform well under load, and optimize costs and operations for any architectural changes that may be needed in the future in different environments. A robust AI/ML solution is one that provides the same services and capabilities to a growing number of clients. With customers using Azure machine learning, a scalable architecture would provide a level of insulation not only for data, but also for compute environments, including models, training and inference configurations for multiple tenants and remain responsive under load. With the pace of adopting artificial intelligence growing very rapidly in the last few years, increased accuracy and size of machine learning models and how these models get deployed, distributed and orchestrated, there's a need in architectural guidance for accurate, reliable and scalable AI/ML solutions. 
 
 ### Scalability
 
@@ -33,9 +37,10 @@ Key decisions for performance gains for an AI/ML solution are part of a broader 
 
 Performance improvements often involve decisions on distributing and managing distributed clusters and nodes for compute tasks. Inference sizing requires [profiling capabilities](https://docs.microsoft.com/en-us/azure/machine-learning/how-to-deploy-profile-model), provided for example by Azure Machine Learning. 
 
-### Model Isolation
+### Vision on the Edge
 
-The key to a model isolation for multi-tenant AI/ML architectures is providing isolation to data and trained models that were trained on a tenant data. Machine learning architects need to take measures to ensure that no tenants have unauthorized or unwanted access to the data or models of other tenants.
+The rationale behind migrating workloads from the cloud to the edge for Vision AI generally falls into two categories – performance and cost. On the performance side of the equation, exfiltrating large quantities of data can cause an unintended performance strain on existing network infrastructure. Additionally, the latency of sending images and/or video streams to the cloud to retrieve results may not meet the needs of the use case. For instance, a person straying into an unauthorized area may require immediate intervention, and that scenario can affect latency when every second counts. Positioning the inferencing model near the point of ingestion, allows for near real-time scoring of the image. It also allows alerting to be performed either locally or through the cloud, depending on the network topology.
+In terms of cost, sending all of the data to the cloud for analysis could significantly impact the ROI or return on investment of a Vision AI initiative. With Azure IoT Edge, a Vision AI module can be designed to only capture the relevant images with a reasonable confidence level based on the scoring. This significantly limits the amount of data being sent.
 
 ### Costs 
 
