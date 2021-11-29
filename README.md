@@ -76,8 +76,6 @@ Developing vision AI applications based on Cognitive Services requires effective
 
 * Scalability: Application developers need to consider how they reconcile between maintaining a sufficiently low level of application complexity and designing the application to scale with number of tenants and the size of tenants' data and workload. 
 
-![Getting Started](/guide/multitenant/approaches/media/ai-ml/getting-started.png)
-
 ## Getting Started 
 
 There’re several areas, or paradigms in machine learning that define most of the methods with vision AI: supervised, unsupervised and reinforcement learning. This classification is open, in fact if you dig deeply into machine learning research and theory, you’ll also discover weakly supervised, self-learning and a wealth of other methods. 
