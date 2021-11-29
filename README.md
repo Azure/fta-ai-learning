@@ -106,6 +106,8 @@ Action Recognition | Action recognition typically involves analyzing actions ove
 
 Classification of objects is essential for a machine learning model to understand various classes of objects present in the video or image: for example, classifying a human, or a tennis ball is the first practical step towards analyzing the image. Most image classification models are trained on ImageNet and use CNNs.
 
+[Build a classifier usign Custom Vision](https://docs.microsoft.com/en-us/azure/cognitive-services/custom-vision-service/getting-started-build-a-classifier)
+
 - Classification tasks ([Azure Workspace for Classification](https://github.com/microsoft/computervision-recipes/blob/master/scenarios/classification/20_azure_workspace_setup.ipynb) | [Deployment to Azure Kubernetes Services](https://github.com/microsoft/computervision-recipes/blob/master/scenarios/classification/22_deployment_on_azure_kubernetes_service.ipynb))
 
 ### Detection 
