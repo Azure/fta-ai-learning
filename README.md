@@ -1,3 +1,7 @@
+# IMPORTANT
+
+With the end of the FastTrack for Azure program, this repository will no longer be updated and is being archived.
+
 # FTA Azure Vision AI Session Resources
 
 > FTA team: this resource contains examples, content, best practices and guidance
